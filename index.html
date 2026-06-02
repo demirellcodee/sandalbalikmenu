@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandal Balık Evi — Menü</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-page">
+  <div class="grain"></div>
+
+  <header class="hero hero-home">
+    <img class="media-bg" src="images/hero/menu.jpg" alt="" loading="eager" onerror="this.remove()" />
+    <div class="media-overlay hero-overlay"></div>
+    <nav class="nav">
+      <span class="logo">Sandal Balık Evi</span>
+      <span class="nav-tag">Est. 2024</span>
+    </nav>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Denizden sofraya</p>
+      <h1>Menümüz</h1>
+      <p class="hero-desc">Taze balık, ev yapımı çorbalar ve serinletici içecekler.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <div class="search-wrap">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+        </svg>
+        <input
+          type="search"
+          id="menuSearch"
+          class="search-input"
+          placeholder="Yemek veya içecek ara... (örn. levrek, ayran)"
+          autocomplete="off"
+        />
+        <button type="button" class="search-clear" id="searchClear" aria-label="Aramayı temizle" hidden>✕</button>
+      </div>
+      <div class="search-results" id="searchResults" hidden></div>
+    </section>
+
+    <section class="featured-spotlight animate-on-scroll" id="featuredSpotlight">
+      <a href="corba.html" class="featured-spotlight-link">
+        <div class="featured-spotlight-inner">
+          <div class="featured-spotlight-glow" aria-hidden="true"></div>
+          <div class="featured-spotlight-media">
+            <img src="images/corba/pancar.png" alt="Pancar Çorbası" loading="lazy" />
+            <span class="featured-badge">★ Sandal'ın En Sevilen Lezzeti</span>
+          </div>
+          <div class="featured-spotlight-content">
+            <p class="featured-eyebrow">Karadeniz usulü · ev yapımı</p>
+            <h2>Pancar Çorbası</h2>
+            <p class="featured-desc">Karalahana, mısır ve tereyağı ile — Giresun'un vazgeçilmez lezzeti. Mısır ekmeği ve yoğurt eşliğinde servis edilir.</p>
+            <div class="featured-meta">
+              <span class="featured-price">₺140</span>
+              <span class="featured-cta">Çorba menüsü →</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="carousel-section" id="homeContent">
+      <div class="carousel-header">
+        <h2>Öneriler</h2>
+        <p>Şefin seçtiği favoriler</p>
+      </div>
+
+      <div class="carousel">
+        <button type="button" class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Önceki">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carouselTrack">
+            <a href="balik.html" class="carousel-item">
+              <div class="carousel-photo" style="--accent: #3D5A80;">
+                <img src="images/oneriler/calar-buglama.png" alt="Çalar Buğlama" loading="lazy" />
+              </div>
+              <h3>Çalar Buğlama</h3>
+              <p class="carousel-price">₺360</p>
+            </a>
+
+            <a href="balik.html" class="carousel-item">
+              <div class="carousel-photo" style="--accent: #2E6B8A;">
+                <img src="images/oneriler/levrek-buglama.png" alt="Levrek Buğlama" loading="lazy" />
+              </div>
+              <h3>Levrek Buğlama</h3>
+              <p class="carousel-price">₺600</p>
+            </a>
+
+            <a href="icecekler.html" class="carousel-item">
+              <div class="carousel-photo" style="--accent: #8B6914;">
+                <img src="images/oneriler/limonata.png" alt="Ev Yapımı Limonata" loading="lazy" />
+              </div>
+              <h3>Ev Yapımı Limonata</h3>
+              <p class="carousel-price">₺75</p>
+            </a>
+
+            <a href="corba.html" class="carousel-item">
+              <div class="carousel-photo" style="--accent: #8B2942;">
+                <img src="images/oneriler/pancar-corbasi.png" alt="Pancar Çorbası" loading="lazy" />
+              </div>
+              <h3>Pancar Çorbası</h3>
+              <p class="carousel-price">₺140</p>
+            </a>
+
+            <a href="balik.html" class="carousel-item">
+              <div class="carousel-photo" style="--accent: #6B4226;">
+                <img src="images/oneriler/hamsi-boregi.png" alt="Hamsi Böreği" loading="lazy" />
+              </div>
+              <h3>Hamsi Böreği</h3>
+            </a>
+          </div>
+        </div>
+
+        <button type="button" class="carousel-btn carousel-next" id="carouselNext" aria-label="Sonraki">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="section-intro" id="categoryIntro">
+      <h2>Kategori Seçin</h2>
+      <p>İstediğiniz bölüme tıklayarak menüyü görüntüleyin.</p>
+    </section>
+
+    <section class="category-grid" id="categoryGrid">
+      <a href="icecekler.html" class="category-card" style="--accent: #2E6B8A;">
+        <div class="category-photo">
+          <img src="images/icecekler/kutu-icecek.png" alt="" loading="lazy" />
+        </div>
+        <div class="category-info">
+          <h2>İçecekler</h2>
+          <p>Çay, kahve, kutu içecek ve daha fazlası</p>
+          <span class="category-link">Menüyü gör →</span>
+        </div>
+      </a>
+
+      <a href="balik.html" class="category-card" style="--accent: #3D5A80;">
+        <div class="category-photo">
+          <img src="images/kategori/balik.jpg" alt="" loading="lazy" onerror="this.src='images/mezgit.png'" />
+        </div>
+        <div class="category-info">
+          <h2>Balık</h2>
+          <p>Mezgit, levrek, hamsi ve daha fazlası — salata ile</p>
+          <span class="category-link">Menüyü gör →</span>
+        </div>
+      </a>
+
+      <a href="corba.html" class="category-card" style="--accent: #8B2942;">
+        <div class="category-photo">
+          <img src="images/corba/pancar.png" alt="" loading="lazy" />
+        </div>
+        <div class="category-info">
+          <h2>Çorbalar</h2>
+          <p>Pancar, balık ve mercimek çorbası</p>
+          <span class="category-link">Menüyü gör →</span>
+        </div>
+      </a>
+
+      <a href="yiyecekler.html" class="category-card" style="--accent: #C4783A;">
+        <div class="category-photo">
+          <img src="images/yiyecekler/kofte-ekmek.png" alt="" loading="lazy" />
+        </div>
+        <div class="category-info">
+          <h2>Yiyecekler</h2>
+          <p>Ekmek arası, tost ve günün ev tatlısı</p>
+          <span class="category-link">Menüyü gör →</span>
+        </div>
+      </a>
+    </section>
+
+    <section class="contact-section animate-on-scroll" id="contactSection">
+      <div class="contact-inner">
+        <p class="contact-eyebrow">Bize ulaşın</p>
+        <h2 class="contact-title">İletişim</h2>
+        <p class="contact-desc">Rezervasyon ve sipariş için hemen arayın.</p>
+
+        <a href="tel:+905378908135" class="contact-phone-card">
+          <span class="contact-phone-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="contact-phone-label">Telefon</span>
+          <span class="contact-phone-number">0537 890 81 35</span>
+          <span class="contact-phone-hint">Aramak için dokunun</span>
+        </a>
+
+        <div class="contact-details">
+          <p>Kumyalı Balıkçı Barınağı Giriş · Atatürk Bulvarı · Giresun</p>
+          <p>Her gün 11:00 — 23:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-map">
+      <iframe
+        src="https://maps.google.com/maps?q=Kumyal%C4%B1+Bal%C4%B1k%C3%A7%C4%B1+Bar%C4%B1na%C4%9F%C4%B1+Giri%C5%9F,+Atat%C3%BCrk+Bulvar%C4%B1,+Giresun&hl=tr&z=17&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Sandal Balık Evi — Giresun Balıkçı Barınağı girişi"
+      ></iframe>
+    </div>
+    <div class="footer-inner">
+      <img src="images/sandal-logo.png" alt="Sandal Balık Evi logosu" class="footer-logo" width="110" height="110" />
+      <div class="footer-details">
+        <h3 class="footer-title">Sandal Balık Evi</h3>
+        <p class="footer-address">Kumyalı Balıkçı Barınağı Giriş · Atatürk Bulvarı · Giresun</p>
+        <p class="footer-hours">Her gün 11:00 — 23:00</p>
+        <a href="tel:+905378908135" class="footer-phone">0537 890 81 35</a>
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=Kumyal%C4%B1+Bal%C4%B1k%C3%A7%C4%B1+Bar%C4%B1na%C4%9F%C4%B1+Giri%C5%9F,+Atat%C3%BCrk+Bulvar%C4%B1,+Giresun&travelmode=driving"
+          class="footer-map-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Yol tarifi al →</a>
+      </div>
+      <p class="footer-credit">demirelcode hazırladı</p>
+    </div>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
